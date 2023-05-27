@@ -67,6 +67,7 @@ fin:
 PRINT _name$+" Random Number Screen "+_ver$
 PRINT"Copyright "+_cr$+" 2023 by Dietmar Gerald Schrausser"
 PRINT "https://github.com/Schrausser/RND1n"
+PRINT "DOI:10.5281/zenodo.7977257"
 RETURN
 !// END //
 !//
