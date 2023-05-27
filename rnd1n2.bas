@@ -3,7 +3,7 @@
 ! // Dietmar G. Schrausser, 2018-23
 ! //
 _name$="RND1n"
-_ver$="v2.5.3"
+_ver$="v2.6.3"
 INCLUDE strg_.inc
 CONSOLE.TITLE _name$
 a=255
@@ -19,7 +19,9 @@ SW.BEGIN rnm
 SW.END
 dlg0:
 INPUT "Random Numbers n=...",nrn,3000
-nrn=ABS(nrn):IF n<2|n>50000:n=50000:ENDIF
+nrn=ABS(nrn)
+IF nrn<2:nrn=2:ENDIF
+IF nrn>50000:nrn=50000:ENDIF
 GR.CLOSE
 st0:                                             % // start      //
 __sd_=RND()                                      % // timeseed   //
@@ -35,6 +37,7 @@ IF csw=5: GR.OPEN a,20,10,0,0,-1
 GR.COLOR a/6,a,a,240,1:ENDIF
 IF csw=6: GR.OPEN a,80,30,30,0,-1
 GR.COLOR a,a,30,30,1:ENDIF
+IF csw=7 THEN GR.OPEN a,0,0,0,0,-1
 DO                                               % // main       //
  GR.SCREEN h,w
  IF h<w:txz=h/40:ELSE:txz=w/40:ENDIF
@@ -47,13 +50,21 @@ DO                                               % // main       //
  IF rnsw=-1                                      % // rnd System //
   xn=(h+h/16)*RND()-h/32:yn=(w+w/16)*RND()-w/32
  ENDIF
+ IF csw=7
+  IF rnsw=1 THEN GOSUB rand
+  IF rnsw=-1 THEN nx=RND()
+  IF nx<=0.25 THEN GR.COLOR 180,a,a,0,1
+  IF nx>0.25 THEN GR.COLOR 180,0,180,0,1
+  IF nx>0.50 THEN GR.COLOR 180,a,100,0,1
+  IF nx>0.75 THEN GR.COLOR a,0,0,0,1
+ ENDIF
  GR.TEXT.DRAW p,xn,yn,FORMAT$("####",n)
  IF zl=nrn:GR.CLS:zl=0:ENDIF
  GR.RENDER:zl=zl+1
  GR.TOUCH tc,tx,ty
  GR.TOUCH2 tc2,tx2,ty2
  IF tc: csw=csw+1
-  IF csw=7:csw=1:ENDIF
+  IF csw=8:csw=1:ENDIF
  GR.CLOSE:GOTO st0:ENDIF
  IF tc2: GOSUB fin: END:ENDIF
 UNTIL 0                                          % // main end   //
