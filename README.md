@@ -18,4 +18,4 @@ Random Number Screen `RND1n`: Screensaver for Android platforms, which generates
 
 ![figure.\label{pic4}](pic4.jpg)
 
-![figure.\label{anim}]anim01.gif)
+![figure.\label{anim}](anim01.gif)
