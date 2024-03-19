@@ -1,11 +1,11 @@
 # RND1n
 [Demo movie](https://m.youtube.com/watch?v=0J0xG1YMkxs&t=20s)
 
-Random Number Screen `RND1n`: Screensaver for Android platforms, which generates random number sequences (c.f. Schrausser, ) and displays them in a random order on the screen. Both, the system's own and the *SIGMA* quasi-random function are used, where
+Random Number Screen `RND1n`: Screensaver for Android platforms, which generates random number sequences (c.f. Schrausser, 1996, p. , 2022b, p. , res.) and displays them in a random order on the screen. Both, the system's own and the *SIGMA* quasi-random function $\varsigma$ are used, where
 
-$$.$$
+$$\varsigma=.$$
 
-See Schrausser (2022).
+See Schrausser (2022a, p.).
 
 ![figure.\label{pic0}](pic0.jpg)
 
@@ -25,8 +25,10 @@ See Schrausser (2022).
 
 ## References
 
-Schrausser, D. G. (2022). Mathematical-Statistical Algorithm Interpreter,
+Schrausser, D. G. (1996). Permutationstests: Theoretische und praktische Arbeitsweise von Permutationsverfahren beim unverbundenen 2 Stichprobenproblem. *Diplom*. Institut für Psychologie, Karl Franzens Universität, Graz. http://doi.org/10.13140/RG.2.2.24500.32640/1
+
+———. (2022a). Mathematical-Statistical Algorithm Interpreter,
 SCHRAUSSER-MAT: Function Index, Manual. *Handbooks*. Academia.
 https://doi.org/10.13140/RG.2.2.28314.52164.
 
-———. (2022).
+———. (2022b). Thesis chapter 1: Introduction. In: *Permutation tests:...*. Thesis. Karl Franzens University, Institute of Psychology. Academia. https://www.academia.edu/82224369
