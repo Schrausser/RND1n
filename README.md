@@ -8,17 +8,7 @@ $$n_i=a⋅r_{n_{i-1}^\varsigma}-int(a⋅r_{n_{i-1}^\varsigma}),$$
 with restvalue $r_x$, $a=10^3$, $\varsigma=\frac{34}{45}$.
 See `sigma.inc`, Schrausser (2022a, p. 17).
 
-![figure.\label{pic0}](pic0.jpg)
-
-
-![figure.\label{pic1}](pic1.jpg)
-
-
-![figure.\label{pic2}](pic2.jpg)
-
-
 ![figure.\label{pic3}](pic3.jpg)
-
 
 ![figure.\label{pic4}](pic4.jpg)
 
