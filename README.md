@@ -1,7 +1,7 @@
 # RND1n
 [Demo movie](https://m.youtube.com/watch?v=0J0xG1YMkxs&t=20s)
 
-Random Number Screen `RND1n`: Screensaver for Android platforms, which generates random number sequences (c.f. Schrausser, 1996, p. , 2022b, p. 4 ff., res.) and displays them in a random order on the screen. Both, the system's own and the *SIGMA* quasi-random function $n$ are used, where
+Random Number Screen `RND1n`: Screensaver for Android platforms, which generates random number sequences (c.f. Schrausser, 1996, p. 1-8 ff., 2022b, p. 4 ff., res.) and displays them in a random order on the screen. Both, the system's own and the *SIGMA* quasi-random function $n$ are used, where
 
 $$n_i=a⋅r_{n_{i-1}^\varsigma}-int(a⋅r_{n_{i-1}^\varsigma}),$$
 
